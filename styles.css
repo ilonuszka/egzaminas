@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 1080px; 
+	margin: 0 auto; 
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 90%;
+}
+
+.navTitle{
+    display: flex;
+    align-content: center;
+}
+
+.navTitle>img{
+    height: 25px;
+}
+.navTitle>div{
+    display:inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* color: #5900ff; */
+    transform-origin: 0%;
+    transform: scaleX(1.1);
+    margin: 0 0 0 5px;
+}
+
+.navLinks>*{
+    margin-right: 10px;
+}
+
+.navLinks>.linkSignUp {
+    color: #ff0080;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-content: center; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    height: 400px;
+    background-image: linear-gradient(to right top, #d9a7c7, #fffcdc);
+    margin: 5px 0 5px 0;
+    border-radius: 5px;
+}
+
+.freeNFT{
+    height: 250px;
+    width:90%;
+    margin:auto;
+    border-radius: 12px;
+    background: linear-gradient(to left, #40e0d0, #ff8c00, #ff0080);
+}
+
+.freeNFT>:nth-child(1){
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 125px 0px 0px 45px ;
+}
+
+.freeNFT>:nth-child(2){
+    margin-left: 45px;
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    /* font-size: 1.1rem; */
+
+}
+
+.navLinks>a{
+    text-decoration: none;
+    color: black;
+} 
+
