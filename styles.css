@@ -67,8 +67,9 @@ main {
 
 /* ========================== Hero part ========================= */
 
-.hero{
+.hero {
     margin-top: 120px;
+    margin-bottom: 115px;
 }
 
 .hero>div {
@@ -79,7 +80,7 @@ main {
     width: 90%;
 }
 
-.heroText>div:nth-child(1) {
+.topText {
     color: rgb(251, 38, 173);
     font-size: 1rem;
     letter-spacing: 3px;
@@ -88,7 +89,7 @@ main {
     margin-bottom: 30px;
 }
 
-.heroText>div:nth-child(2) {
+.midText {
     max-width: 610px;
     top: 35px;
     font-family: "Archivo Black";
@@ -99,23 +100,23 @@ main {
     padding: 0;
 }
 
-.heroText>div:nth-child(3){
+.bottomText {
     max-width: 500px;
     color: rgb(113, 113, 113);
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.heroText>.button {
+.button {
     margin-top: 50px;
     font-family: "Roboto";
-    width: 110px;
-    height: 37px;
+    width: 115px;
+    height: 45px;
     border-radius: 100rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 800;
-    line-height: 37px;
+    line-height: 45px;
     padding: .7rem 2rem;
     color: black;
     border: solid 4px transparent;
@@ -124,13 +125,13 @@ main {
     box-shadow: 2px 1000px 1px #fff inset;
 }
 
-.heroText>.button:hover {
+.button:hover {
     box-shadow: none;
     color: white;
 }
 
-.heroImg{
-    width:600px;
+.heroImg {
+    width: 630px;
     height: 650px;
     background-image: url("images/BFTBot.png");
     background-size: cover;
@@ -157,9 +158,48 @@ main {
     margin-left: 45px;
 }
 
-/* ========================= Cards part ========================= */
+.partners {
+    margin-top: 125px;
+}
 
-.auction>div {
+/* ========================= Partners part ========================= */
+
+.partners>div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========================= Auction part ========================= */
+
+.auction {
+    margin-top: 110px;
+}
+
+.auctionText {
+    width: 90%;
+    margin: auto;
+}
+
+.auctionText>div:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.auctionText>div:nth-child(2) {
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.auctionText>div:nth-child(2)>a {
+    color: black;
+}
+
+.cards {
     width: 90%;
     margin: auto;
     display: flex;
@@ -203,9 +243,7 @@ main {
     grid-template-rows: 0.8fr 1fr 1fr;
     height: 83px;
     width: 260px;
-    /* position: fixed; */
-position: absolute;
-/* top: 17px; */
+    position: absolute;
     margin: 17px 0 0 20px;
 }
 
@@ -246,7 +284,6 @@ position: absolute;
 .cardTime {
     place-self: center end;
     color: rgb(130, 130, 130);
-    ;
     font-size: 1.2rem;
 }
 
@@ -255,18 +292,69 @@ position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     height: 22px;
-    width: 20px;    
+    width: 20px;
+}
+
+/* ====================== launching part ========================= */
+
+.launchingSoon {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.launchingSoon>div {
+    margin: auto;
+    /* height: 650px; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.launchingSoon>div>div>.topText {
+    margin-top: 120px;
+    margin-bottom: 25px;
+}
+
+.launchingSoon>div>div>.midText {
+    margin-top: 0px;
+    font-size: 3.6rem;
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.launchingSoon>div:nth-child(1),
+.launchingSoon>div:nth-child(3) {
+    height: 2px;
+    background-color: rgb(241, 241, 241);
+}
+
+/* .launchingSoon>div:nth-child(3) {
+    margin-top: 120px;
+} */
+
+.launchingSoonImg {
+    width: 300px;
+    height: 480px;
+    background-image: url("images/greenDoll.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 140px;
+    margin-top: 80px;
 }
 
 /* ========================= Footer part ========================= */
 
-footer {
+footer>div {
     display: flex;
     justify-content: space-between;
+    font-size: 1.4rem;
+    margin:auto;
+    width: 90%;
 }
 
 section {
     height: fit-content;
+
     /* background-image: linear-gradient(to right top, #d9a7c7, #fffcdc); */
     margin: 5px 0 5px 0;
     /* border-radius: 5px; */
