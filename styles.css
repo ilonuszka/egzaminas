@@ -2,82 +2,18 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    max-width: 1080px; 
-	margin: 0 auto; 
+    max-width: 1440px;
+    margin: 0 auto;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+/* ========================= Header part ========================= */
+
+header {
     display: flex;
     justify-content: center;
-}
-
-nav{
-    width: 90%;
-}
-
-.navTitle{
-    display: flex;
-    align-content: center;
-}
-
-.navTitle>img{
-    height: 25px;
-}
-.navTitle>div{
-    display:inline-block;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    /* color: #5900ff; */
-    transform-origin: 0%;
-    transform: scaleX(1.1);
-    margin: 0 0 0 5px;
-}
-
-.navLinks>*{
-    margin-right: 10px;
-}
-
-.navLinks>.linkSignUp {
-    color: #ff0080;
-}
-
-main{
-    display:flex;
-    flex-direction: column;
-    align-content: center; 
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-section {
-    height: 400px;
-    background-image: linear-gradient(to right top, #d9a7c7, #fffcdc);
-    margin: 5px 0 5px 0;
-    border-radius: 5px;
-}
-
-.freeNFT{
-    height: 250px;
-    width:90%;
-    margin:auto;
-    border-radius: 12px;
-    background: linear-gradient(to left, #40e0d0, #ff8c00, #ff0080);
-}
-
-.freeNFT>:nth-child(1){
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 125px 0px 0px 45px ;
-}
-
-.freeNFT>:nth-child(2){
-    margin-left: 45px;
+    margin-top: 60px;
 }
 
 header>nav {
@@ -85,12 +21,253 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    /* font-size: 1.1rem; */
-
+    width: 90%;
 }
 
-.navLinks>a{
+.navTitle {
+    display: flex;
+    align-content: center;
+}
+
+.navTitle>img {
+    height: 35px;
+}
+
+.navTitle>div {
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    transform-origin: 0%;
+    transform: scaleX(1.1);
+    margin: 0 0 0 10px;
+}
+
+.navLinks>* {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.navLinks>.linkSignUp {
+    color: #ff0080;
+}
+
+.navLinks>a {
     text-decoration: none;
     color: black;
-} 
+}
 
+/* ========================== Main part ========================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* ========================== Hero part ========================= */
+
+.hero{
+    margin-top: 120px;
+}
+
+.hero>div {
+    margin: auto;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.heroText>div:nth-child(1) {
+    color: rgb(251, 38, 173);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.heroText>div:nth-child(2) {
+    max-width: 610px;
+    top: 35px;
+    font-family: "Archivo Black";
+    font-size: 6rem;
+    font-weight: 1000;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.heroText>div:nth-child(3){
+    max-width: 500px;
+    color: rgb(113, 113, 113);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.heroText>.button {
+    margin-top: 50px;
+    font-family: "Roboto";
+    width: 110px;
+    height: 37px;
+    border-radius: 100rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 37px;
+    padding: .7rem 2rem;
+    color: black;
+    border: solid 4px transparent;
+    background-image: linear-gradient(220deg, #d19d18, #ff489a);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.heroText>.button:hover {
+    box-shadow: none;
+    color: white;
+}
+
+.heroImg{
+    width:600px;
+    height: 650px;
+    background-image: url("images/BFTBot.png");
+    background-size: cover;
+}
+
+/* ======================= Free NFT part ========================= */
+
+.freeNFT {
+    height: 320px;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000);
+}
+
+.freeNFT>:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 155px 0px 0px 45px;
+}
+
+.freeNFT>:nth-child(2) {
+    font-size: 1.4rem;
+    margin-left: 45px;
+}
+
+/* ========================= Cards part ========================= */
+
+.auction>div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTop {
+    background-size: cover;
+    width: 300px;
+    height: 280px;
+    border-radius: 18px 18px 0 0;
+}
+
+.purpleManImg {
+    background-image: url("images/purpleMan.png");
+}
+
+.beigeImg {
+    background-image: url("images/beige.png");
+}
+
+.redManImg {
+    background-image: url("images/redMan.png");
+}
+
+.greenImg {
+    background-image: url("images/green.png");
+}
+
+.cardBottom {
+    background-color: rgb(230, 230, 230);
+    height: 120px;
+    width: 300px;
+    border-radius: 0 0 18px 18px;
+    position: relative;
+}
+
+.dataGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1fr 1fr;
+    height: 83px;
+    width: 260px;
+    /* position: fixed; */
+position: absolute;
+/* top: 17px; */
+    margin: 17px 0 0 20px;
+}
+
+.cardSeries {
+    color: rgb(228, 121, 0);
+    place-self: center start;
+    font-size: 0.8rem;
+}
+
+.cardTopBid {
+    place-self: center end;
+    color: rgb(130, 130, 130);
+    font-size: 0.8rem;
+}
+
+.cardClient {
+    place-self: center start;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cardETH {
+    place-self: center end;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+}
+
+.cardClientID {
+    place-self: center start;
+    color: rgb(130, 130, 130);
+    font-size: 1.2rem;
+}
+
+.cardTime {
+    place-self: center end;
+    color: rgb(130, 130, 130);
+    ;
+    font-size: 1.2rem;
+}
+
+.cardETHIcon {
+    background-image: url("images/eth.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 20px;    
+}
+
+/* ========================= Footer part ========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    height: fit-content;
+    /* background-image: linear-gradient(to right top, #d9a7c7, #fffcdc); */
+    margin: 5px 0 5px 0;
+    /* border-radius: 5px; */
+}
