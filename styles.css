@@ -2,10 +2,12 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    max-width: 1440px;
+    /* width: 100vw; */
     margin: 0 auto;
     color: black;
     font-family: 'Roboto', sans-serif;
+    /* background-color: rgb(236, 214, 17); */
+    overflow-x: hidden;/*MOD*/
 }
 
 /* ========================= Header part ========================= */
@@ -13,7 +15,8 @@ body {
 header {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 17px;  /*MOD*/
+    /* width: 412px; */
 }
 
 header>nav {
@@ -21,12 +24,16 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    width: 90%;
+    width:87%;/*MOD*/
 }
 
 .navTitle {
     display: flex;
     align-content: center;
+}
+
+.navLinks {
+    display: none;
 }
 
 .navTitle>img {
@@ -47,71 +54,80 @@ header>nav {
     color: black;
 }
 
+
+
 /* ========================== Main part ========================== */
 
 main {
+    /* width: 450px;MOD */
+    /* width: 412px; */
     display: flex;
     flex-direction: column;
     align-content: center;
+    overflow-x: hidden;
 }
 
 /* ========================== Hero part ========================= */
 
 .hero {
-    margin-top: 120px;
-    margin-bottom: 115px;
+    margin-top: 75px;/*MOD*/
+    margin-bottom: 115px;/*MOD*/
+    position: relative;/*MOD*/
 }
 
 .hero>div {
     margin: auto;
-    height: 650px;
+    height:350px;/*MOD*/
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 86%;/*MOD*/
 }
 
 .topText {
     color: rgb(251, 38, 173);
-    font-size: 1rem;
-    letter-spacing: 3px;
+    font-size: 1rem;/*MOD*/
+    letter-spacing: 2px;
     font-weight: 1000;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 0px;/*MOD*/
+    margin-bottom: 15px;/*MOD*/
 }
 
 .midText {
-    max-width: 610px;
+    max-width: 350px;/*MOD*/
+    overflow-x: visible;
     top: 35px;
     font-family: "Archivo Black";
-    font-size: 6rem;
-    font-weight: 1000;
+    font-size: 3rem;/*MOD*/
+    font-weight: 1000;/*MOD*/
     line-height: 1.2;
-    margin-bottom: 30px;
+    letter-spacing: -2px;
+    margin-bottom: 25px;/*MOD*/
     padding: 0;
 }
 
 .bottomText {
-    max-width: 500px;
+    max-width: 245px;/*MOD*/
     color: rgb(113, 113, 113);
-    font-size: 1.3rem;
+    font-size: 1.2rem;/*MOD*/
+    line-height: 1.5;/*MOD*/
     font-weight: 400;
 }
 
 .button {
     display: block;
-    margin-top: 50px;
+    margin-top: 30px;/*MOD*/
     text-decoration: none   ;
     font-family: "Roboto";
-    width: 115px;
-    height: 45px;
+    width: 115px;/*MOD*/
+    height: 40px;/*MOD*/
     border-radius: 100rem;
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*MOD*/
     text-align: center;
     font-weight: 800;
-    line-height: 45px;
+    line-height: 40px;/*MOD*/
     padding: .7rem 2rem;
     color: black;
-    border: solid 4px transparent;
+    border: solid 5px transparent;/*MOD*/
     background-image: linear-gradient(220deg, #d19d18, #ff489a);
     background-origin: border-box;
     box-shadow: 2px 1000px 1px #fff inset;
@@ -123,67 +139,94 @@ main {
 }
 
 .heroImg {
-    width: 660px;
-    height: 650px;
-    background-image: url("images/BFTBot.png");
+    overflow-x: hidden;/*MOD*/
+    position: absolute;/*MOD*/
+    z-index: -1;/*MOD*/
+    left: 50%;/*MOD*/
+    top: -85px;/*MOD*/
+    width: 400px;/*MOD*/
+    height: 400px;/*MOD*/
+    background-image: url("images/BFTBot.svg");
     background-size: cover;
 }
 
 /* ======================= Free NFT part ========================= */
 
 .freeNFT {
-    height: 320px;
-    width: 90%;
-    margin: auto;
-    border-radius: 12px;
+    height: 315px;/*MOD*/
+    /* width: 90%; */
+    /* margin: auto; */
+    /* border-radius: 12px; */
     background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000);
 }
 
 .freeNFT>:nth-child(1) {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 155px 0px 0px 45px;
+    font-size: 2.5rem;/*MOD*/
+    font-weight: 500;/*MOD*/
+    max-width: 550px;/*MOD*/
+    letter-spacing: 1px;/*MOD*/
+    margin: 120px 0px 0px 30px;/*MOD*/
 }
 
 .freeNFT>:nth-child(2) {
-    font-size: 1.4rem;
-    margin-left: 45px;
-}
-
-.partners {
-    margin-top: 125px;
+    font-size: 1.3rem;/*MOD*/
+    max-width: 330px;/*MOD*/
+    line-height: 1.4;
+    margin-left: 30px;/*MOD*/
+    margin-top: 12px;/*MOD*/
 }
 
 /* ========================= Partners part ========================= */
 
+.partners {
+    margin-top: 57px;
+}
+
 .partners>div {
-    width: 90%;
+    width: 86%;/*MOD*/
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;/*MOD*/
+    grid-template-columns: 1fr 1fr;/*MOD*/
+    grid-template-rows: 1fr 1fr;/*MOD*/
+    justify-items: center;/*MOD*/
+    gap: 20px;/*MOD*/
+}
+
+.opendoor, .boomerang {
+    display: none;/*MOD*/
+}
+
+.partners img{
+    height: 45px;/*MOD*/
 }
 
 /* ========================= Auction part ========================= */
 
 .auction {
-    margin-top: 110px;
+    margin-top: 45px;/*MOD*/
 }
 
 .auctionText {
-    width: 90%;
+    width: 86%;/*MOD*/
     margin: auto;
 }
 
 .auctionText>div:nth-child(1) {
-    font-size: 2.5rem;
+    font-size: 2.3rem;/*MOD*/
+    letter-spacing: 2px;/*MOD*/
+    line-height: 1.3;/*MOD*/
+    max-width: 550px;/*MOD*/
     font-weight: 600;
 
 }
 
 .auctionText>div:nth-child(2) {
-    margin-top: 25px;
-    margin-bottom: 60px;
-    font-size: 1.3rem;
+    margin-top: 13px;/*MOD*/
+    margin-bottom: 35px;
+    max-width: 550px;/*MOD*/
+    font-size: 1.2rem;/*MOD*/
+    line-height: 1.6;/*MOD*/
+    letter-spacing: 1px;/*MOD*/
     font-weight: 400;
 }
 
@@ -192,40 +235,44 @@ main {
 }
 
 .cards {
-    width: 90%;
+    width: 86%;/*MOD*/
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
+.cards>div{
+    margin-right: 40px;
+}
+
 .cardTop {
     background-size: cover;
-    width: 300px;
-    height: 280px;
-    border-radius: 18px 18px 0 0;
+    width: 280px;/*MOD*/
+    height: 280px;/*MOD*/
+    border-radius: 18px 18px 0 0;/*MOD*/
 }
 
 .purpleManImg {
-    background-image: url("images/purpleMan.png");
+    background-image: url("images/purpleMan.svg");
 }
 
 .beigeImg {
-    background-image: url("images/beige.png");
+    background-image: url("images/beige.svg");
 }
 
 .redManImg {
-    background-image: url("images/redMan.png");
+    background-image: url("images/redMan.svg");
 }
 
 .greenImg {
-    background-image: url("images/green.png");
+    background-image: url("images/green.svg");
 }
 
 .cardBottom {
     background-color: rgb(230, 230, 230);
-    height: 120px;
-    width: 300px;
-    border-radius: 0 0 18px 18px;
+    height: 120px;/*MOD*/
+    width: 280px;/*MOD*/
+    border-radius: 0 0 20px 20px;/*MOD*/
     position: relative;
 }
 
@@ -233,35 +280,36 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.8fr 1fr 1fr;
-    height: 83px;
-    width: 260px;
+    height: 83px;/*MOD*/
+    width: 240px;/*MOD*/
     position: absolute;
-    margin: 17px 0 0 20px;
+    margin: 17px 0 0 20px;/*MOD*/
 }
 
 .cardSeries {
     color: rgb(228, 121, 0);
     place-self: center start;
-    font-size: 0.8rem;
+    font-size: 0.8rem;/*MOD*/
+
 }
 
 .cardTopBid {
     place-self: center end;
     color: rgb(130, 130, 130);
-    font-size: 0.8rem;
+    font-size: 0.8rem;/*MOD*/
 }
 
 .cardClient {
     place-self: center start;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*MOD*/
     font-weight: 600;
 }
 
 .cardETH {
     place-self: center end;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*MOD*/
     font-weight: 600;
     display: flex;
     align-content: center;
@@ -270,17 +318,17 @@ main {
 .cardClientID {
     place-self: center start;
     color: rgb(130, 130, 130);
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*MOD*/
 }
 
 .cardTime {
     place-self: center end;
     color: rgb(130, 130, 130);
-    font-size: 1.2rem;
+    font-size: 1.2rem;/*MOD*/
 }
 
 .cardETHIcon {
-    background-image: url("images/eth.png");
+    background-image: url("images/eth.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 22px;
@@ -290,28 +338,41 @@ main {
 /* ====================== launching part ========================= */
 
 .launchingSoon {
-    margin-top: 120px;
+    margin-top: 83px;/*MOD*/
     margin-bottom: 120px;
+    position: relative;/*MOD*/
+    overflow: hidden;/*MOD*/
 }
 
-.launchingSoon>div {
+.launchingSoon>div:nth-child(2) {
     margin: auto;
-    /* height: 650px; */
-    display: flex;
+    height: 545px;/*MOD*/
+    display:block;/*MOD*/
     justify-content: space-between;
-    width: 90%;
+    width: 86%;/*MOD*/
 }
 
 .launchingSoon>div>div>.topText {
-    margin-top: 120px;
+    margin-top: 60px;/*MOD*/
     margin-bottom: 25px;
 }
 
 .launchingSoon>div>div>.midText {
-    margin-top: 0px;
+    margin-top: -3px;/*MOD*/
     font-size: 3.6rem;
-    max-width: 800px;
+    line-height: 1.15;
+    max-width: 300px;/*MOD*/
     margin-bottom: 25px;
+}
+
+.launchingSoon>div>div>.bottomText {
+    max-width: 205px;/*MOD*/
+    letter-spacing: 1px;/*MOD*/
+    /* width: 100%; */
+}
+
+.goLive{
+    display: none;
 }
 
 .launchingSoon>div:nth-child(1),
@@ -325,8 +386,12 @@ main {
 } */
 
 .launchingSoonImg {
-    width: 300px;
-    height: 480px;
+    position: absolute;/*MOD*/
+    width: 250px;/*MOD*/
+    height: 460px;/*MOD*/
+    top: 70px;/*MOD*/
+    left: 240px;/*MOD*/
+    z-index: -1;
     background-image: url("images/greenDoll.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -364,7 +429,8 @@ main {
     font-size: 1.1rem;
 }
 
-.linksLogo>div:nth-child(3)>i{
+.linksLogo>div:nth-child(3)>a{
+    color: rgb(117, 117, 117);
     margin-right: 10px;
 }
 
@@ -423,4 +489,438 @@ section {
     /* background-image: linear-gradient(to right top, #d9a7c7, #fffcdc); */
     margin: 5px 0 5px 0;
     /* border-radius: 5px; */
+}
+
+
+@media screen and (min-width: 768px) { 
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 1440px;
+        margin: 0 auto;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        background-color: white;
+    }
+    
+    /* ========================= Header part ========================= */
+    
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    
+    header>nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        width: 90%;
+    }
+    
+    .navTitle {
+        display: flex;
+        align-content: center;
+    }
+    
+    .navTitle>img {
+        height: 35px;
+    }
+    
+    .navLinks>* {
+        font-size: 1.4rem;
+        margin-right: 10px;
+    }
+    
+    .navLinks>.linkSignUp {
+        color: #ff0080;
+    }
+    
+    .navLinks>a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    /* ========================== Main part ========================== */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    /* ========================== Hero part ========================= */
+    
+    .hero {
+        margin-top: 120px;
+        margin-bottom: 115px;
+    }
+    
+    .hero>div {
+        margin: auto;
+        height: 650px;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .topText {
+        color: rgb(251, 38, 173);
+        font-size: 1rem;
+        letter-spacing: 3px;
+        font-weight: 1000;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    .midText {
+        max-width: 610px;
+        top: 35px;
+        font-family: "Archivo Black";
+        font-size: 6rem;
+        font-weight: 1000;
+        line-height: 1.2;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    
+    .bottomText {
+        max-width: 500px;
+        color: rgb(113, 113, 113);
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    .button {
+        display: block;
+        margin-top: 50px;
+        text-decoration: none   ;
+        font-family: "Roboto";
+        width: 115px;
+        height: 45px;
+        border-radius: 100rem;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 800;
+        line-height: 45px;
+        padding: .7rem 2rem;
+        color: black;
+        border: solid 4px transparent;
+        background-image: linear-gradient(220deg, #d19d18, #ff489a);
+        background-origin: border-box;
+        box-shadow: 2px 1000px 1px #fff inset;
+    }
+    
+    .button:hover {
+        box-shadow: none;
+        color: white;
+    }
+    
+    .heroImg {
+        width: 660px;
+        height: 650px;
+        background-image: url("images/BFTBot.png");
+        background-size: cover;
+    }
+    
+    /* ======================= Free NFT part ========================= */
+    
+    .freeNFT {
+        height: 320px;
+        width: 90%;
+        margin: auto;
+        border-radius: 12px;
+        background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000);
+    }
+    
+    .freeNFT>:nth-child(1) {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 155px 0px 0px 45px;
+    }
+    
+    .freeNFT>:nth-child(2) {
+        font-size: 1.4rem;
+        margin-left: 45px;
+    }
+    
+    .partners {
+        margin-top: 125px;
+    }
+    
+    /* ========================= Partners part ========================= */
+    
+    .partners>div {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* ========================= Auction part ========================= */
+    
+    .auction {
+        margin-top: 110px;
+    }
+    
+    .auctionText {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .auctionText>div:nth-child(1) {
+        font-size: 2.5rem;
+        font-weight: 600;
+    
+    }
+    
+    .auctionText>div:nth-child(2) {
+        margin-top: 25px;
+        margin-bottom: 60px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    
+    .auctionText>div:nth-child(2)>a {
+        color: black;
+    }
+    
+    .cards {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .cardTop {
+        background-size: cover;
+        width: 300px;
+        height: 280px;
+        border-radius: 18px 18px 0 0;
+    }
+    
+    .purpleManImg {
+        background-image: url("images/purpleMan.png");
+    }
+    
+    .beigeImg {
+        background-image: url("images/beige.png");
+    }
+    
+    .redManImg {
+        background-image: url("images/redMan.png");
+    }
+    
+    .greenImg {
+        background-image: url("images/green.png");
+    }
+    
+    .cardBottom {
+        background-color: rgb(230, 230, 230);
+        height: 120px;
+        width: 300px;
+        border-radius: 0 0 18px 18px;
+        position: relative;
+    }
+    
+    .dataGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 1fr 1fr;
+        height: 83px;
+        width: 260px;
+        position: absolute;
+        margin: 17px 0 0 20px;
+    }
+    
+    .cardSeries {
+        color: rgb(228, 121, 0);
+        place-self: center start;
+        font-size: 0.8rem;
+    }
+    
+    .cardTopBid {
+        place-self: center end;
+        color: rgb(130, 130, 130);
+        font-size: 0.8rem;
+    }
+    
+    .cardClient {
+        place-self: center start;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .cardETH {
+        place-self: center end;
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        align-content: center;
+    }
+    
+    .cardClientID {
+        place-self: center start;
+        color: rgb(130, 130, 130);
+        font-size: 1.2rem;
+    }
+    
+    .cardTime {
+        place-self: center end;
+        color: rgb(130, 130, 130);
+        font-size: 1.2rem;
+    }
+    
+    .cardETHIcon {
+        background-image: url("images/eth.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 20px;
+    }
+    
+    /* ====================== launching part ========================= */
+    
+    .launchingSoon {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    
+    .launchingSoon>div {
+        margin: auto;
+        /* height: 650px; */
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .launchingSoon>div>div>.topText {
+        margin-top: 120px;
+        margin-bottom: 25px;
+    }
+    
+    .launchingSoon>div>div>.midText {
+        margin-top: 0px;
+        font-size: 3.6rem;
+        max-width: 800px;
+        margin-bottom: 25px;
+    }
+    
+    .launchingSoon>div:nth-child(1),
+    .launchingSoon>div:nth-child(3) {
+        height: 2px;
+        background-color: rgb(241, 241, 241);
+    }
+    
+    /* .launchingSoon>div:nth-child(3) {
+        margin-top: 120px;
+    } */
+    
+    .launchingSoonImg {
+        width: 300px;
+        height: 480px;
+        background-image: url("images/greenDoll.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 140px;
+        margin-top: 80px;
+    }
+    
+    /* ========================= Links part ========================= */
+    
+    .links>div{
+        margin:auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 140px;
+    }
+    
+    .linksLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: rgb(117, 117, 117);
+    }
+    
+    .linksLogo>div:nth-child(1){
+        height: 35px;
+    }
+    
+    .linksLogo>div:nth-child(2){
+        font-size: 1.3rem;
+    }
+    
+    .linksLogo>div:nth-child(3){
+        font-size: 1.1rem;
+    }
+    
+    .linksLogo>div:nth-child(3)>a{
+        color: rgb(117, 117, 117);
+        margin-right: 10px;
+    }
+    
+    .linksLinks{
+        list-style-type: none; 
+        padding: 0; 
+        margin: 0;
+        display: grid;
+        justify-items: end;
+        grid-template-columns: repeat(4, 1fr);
+        color: rgb(117, 117, 117);
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    
+    .linksLinks ul{
+        list-style-type: none; 
+        padding: 0; 
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 100px;
+    }
+    
+    .linksLinks ul>li{
+        align-self: end;
+    }
+    
+    .linksLinks ul>li:nth-child(1){
+        align-self: start;
+        font-weight: 800;
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    
+    .linksLinks a{
+        text-decoration: none;
+        color: rgb(117, 117, 117);
+    }
+    
+    /* ========================= Footer part ========================= */
+    
+    footer>div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        margin:115px auto 70px auto;
+        width: 90%;
+        color: rgb(117, 117, 117);
+    }
+    
+    section {
+        height: fit-content;
+    
+        /* background-image: linear-gradient(to right top, #d9a7c7, #fffcdc); */
+        margin: 5px 0 5px 0;
+        /* border-radius: 5px; */
+    }
+
 }
