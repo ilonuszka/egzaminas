@@ -61,6 +61,7 @@ header>nav {
 main {
     /* width: 450px;MOD */
     /* width: 412px; */
+    /* height: 2900px; */
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -342,11 +343,11 @@ main {
     margin-bottom: 120px;
     position: relative;/*MOD*/
     overflow: hidden;/*MOD*/
+    height: 945px;/* MOD */
 }
 
 .launchingSoon>div:nth-child(2) {
     margin: auto;
-    height: 545px;/*MOD*/
     display:block;/*MOD*/
     justify-content: space-between;
     width: 86%;/*MOD*/
@@ -390,7 +391,7 @@ main {
     width: 250px;/*MOD*/
     height: 460px;/*MOD*/
     top: 70px;/*MOD*/
-    left: 240px;/*MOD*/
+    left: 235px;/*MOD*/
     z-index: -1;
     background-image: url("images/greenDoll.png");
     background-size: contain;
@@ -403,26 +404,30 @@ main {
 
 .links>div{
     margin:auto;
-    width: 90%;
+    width: 86%;/*MOD*/
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 140px;
+    flex-direction: column;/*MOD*/
+    justify-content: start;
+    height: 440px;/*MOD*/
 }
 
 .linksLogo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     color: rgb(117, 117, 117);
+    height: 160px;/*MOD*/
+    margin-bottom: 70px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(1){
     height: 35px;
+    margin-bottom: 35px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(2){
     font-size: 1.3rem;
+    margin-bottom: 35px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(3){
@@ -440,7 +445,10 @@ main {
     margin: 0;
     display: grid;
     justify-items: end;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;/*MOD*/
+    grid-template-rows: 1fr 1fr;/*MOD*/
+    column-gap: 70px;/*MOD*/
+    row-gap: 50px;
     color: rgb(117, 117, 117);
     font-size: 1.3rem;
     width: 50%;
@@ -465,6 +473,7 @@ main {
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: 3px;
+    margin-bottom: 20px;/*MOD*/
 }
 
 .linksLinks a{
