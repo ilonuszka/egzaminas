@@ -7,7 +7,11 @@ body {
     color: black;
     font-family: 'Roboto', sans-serif;
     /* background-color: rgb(236, 214, 17); */
-    overflow-x: hidden;/*MOD*/
+    /* overflow-x: hidden; */
+}
+
+#hamburger{
+    display: none;
 }
 
 /* ========================= Header part ========================= */
@@ -52,6 +56,11 @@ header>nav {
 .navLinks>a {
     text-decoration: none;
     color: black;
+}
+
+#burgerButton {
+    font-size: 1.7rem;
+    font-weight: 900;
 }
 
 
@@ -140,7 +149,7 @@ main {
 }
 
 .heroImg {
-    overflow-x: hidden;/*MOD*/
+    /* overflow-x: hidden;MOD */
     position: absolute;/*MOD*/
     z-index: -1;/*MOD*/
     left: 50%;/*MOD*/
@@ -164,7 +173,7 @@ main {
 .freeNFT>:nth-child(1) {
     font-size: 2.5rem;/*MOD*/
     font-weight: 500;/*MOD*/
-    max-width: 550px;/*MOD*/
+    max-width: 350px;/*MOD*/
     letter-spacing: 1px;/*MOD*/
     margin: 120px 0px 0px 30px;/*MOD*/
 }
@@ -181,6 +190,7 @@ main {
 
 .partners {
     margin-top: 57px;
+    max-width: 450px;
 }
 
 .partners>div {
@@ -216,7 +226,7 @@ main {
     font-size: 2.3rem;/*MOD*/
     letter-spacing: 2px;/*MOD*/
     line-height: 1.3;/*MOD*/
-    max-width: 550px;/*MOD*/
+    max-width: 300px;/*MOD*/
     font-weight: 600;
 
 }
@@ -224,7 +234,7 @@ main {
 .auctionText>div:nth-child(2) {
     margin-top: 13px;/*MOD*/
     margin-bottom: 35px;
-    max-width: 550px;/*MOD*/
+    max-width: 360px;/*MOD*/
     font-size: 1.2rem;/*MOD*/
     line-height: 1.6;/*MOD*/
     letter-spacing: 1px;/*MOD*/
@@ -340,16 +350,16 @@ main {
 
 .launchingSoon {
     margin-top: 83px;/*MOD*/
-    margin-bottom: 120px;
+    margin-bottom: 55px;
     position: relative;/*MOD*/
-    overflow: hidden;/*MOD*/
-    height: 945px;/* MOD */
+    /* height: 630px;MOD */
 }
 
 .launchingSoon>div:nth-child(2) {
     margin: auto;
     display:block;/*MOD*/
     justify-content: space-between;
+    overflow-y: hidden;/*MOD*/
     width: 86%;/*MOD*/
 }
 
@@ -377,20 +387,32 @@ main {
 }
 
 .launchingSoon>div:nth-child(1),
-.launchingSoon>div:nth-child(3) {
+.launchingSoon>div:nth-child(3),
+.launchingSoon>div:nth-child(4){
     height: 2px;
     background-color: rgb(241, 241, 241);
 }
 
-/* .launchingSoon>div:nth-child(3) {
-    margin-top: 120px;
-} */
+.launchingSoon>div:nth-child(3) {
+    margin-top: 60px;
+}
+
+.launchingSoon>div:nth-child(4) {
+    /* display: block; */
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    top: 317px;
+    left: 0px;
+    /* background-color:red; */
+}
 
 .launchingSoonImg {
     position: absolute;/*MOD*/
     width: 250px;/*MOD*/
     height: 460px;/*MOD*/
-    top: 70px;/*MOD*/
+    /* top: 70px;MOD */
+    bottom:1px;
     left: 235px;/*MOD*/
     z-index: -1;
     background-image: url("images/greenDoll.png");
@@ -398,6 +420,7 @@ main {
     background-repeat: no-repeat;
     margin-right: 140px;
     margin-top: 80px;
+
 }
 
 /* ========================= Links part ========================= */
@@ -408,7 +431,7 @@ main {
     display: flex;
     flex-direction: column;/*MOD*/
     justify-content: start;
-    height: 440px;/*MOD*/
+    /* height: 440px;MOD */
 }
 
 .linksLogo{
@@ -416,18 +439,18 @@ main {
     flex-direction: column;
     justify-content: start;
     color: rgb(117, 117, 117);
-    height: 160px;/*MOD*/
-    margin-bottom: 70px;/*MOD*/
+    /* height: 120px;MOD */
+    margin-bottom: 55px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(1){
     height: 35px;
-    margin-bottom: 35px;/*MOD*/
+    margin-bottom: 27px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(2){
     font-size: 1.3rem;
-    margin-bottom: 35px;/*MOD*/
+    margin-bottom: 27px;/*MOD*/
 }
 
 .linksLogo>div:nth-child(3){
@@ -435,7 +458,7 @@ main {
 }
 
 .linksLogo>div:nth-child(3)>a{
-    color: rgb(117, 117, 117);
+    color: rgb(100, 100, 100);
     margin-right: 10px;
 }
 
@@ -444,12 +467,12 @@ main {
     padding: 0; 
     margin: 0;
     display: grid;
-    justify-items: end;
+    justify-items: start; /*MOD*/
     grid-template-columns: 1fr 1fr;/*MOD*/
     grid-template-rows: 1fr 1fr;/*MOD*/
     column-gap: 70px;/*MOD*/
-    row-gap: 50px;
-    color: rgb(117, 117, 117);
+    row-gap: 35px;
+    color: rgb(100, 100, 100);
     font-size: 1.3rem;
     width: 50%;
 }
@@ -473,12 +496,12 @@ main {
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: 3px;
-    margin-bottom: 20px;/*MOD*/
+    margin-bottom: 16px;/*MOD*/
 }
 
 .linksLinks a{
     text-decoration: none;
-    color: rgb(117, 117, 117);
+    color: rgb(100, 100, 100);
 }
 
 /* ========================= Footer part ========================= */
@@ -487,19 +510,14 @@ footer>div {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
-    margin:115px auto 70px auto;
+    margin:17px auto 70px auto;/*MOD*/
     width: 90%;
-    color: rgb(117, 117, 117);
+    color: rgb(147, 147, 147);
 }
 
-section {
-    height: fit-content;
-
-    /* background-image: linear-gradient(to right top, #d9a7c7, #fffcdc); */
-    margin: 5px 0 5px 0;
-    /* border-radius: 5px; */
+.date {
+    display: none;
 }
-
 
 @media screen and (min-width: 768px) { 
 
