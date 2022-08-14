@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#hamburger{
+#hamburger {
     display: none;
 }
 
@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    margin-top: 17px;  
+    margin-top: 17px;
 }
 
 header>nav {
@@ -24,7 +24,7 @@ header>nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    width:87%;
+    width: 87%;
 }
 
 .navTitle {
@@ -33,7 +33,31 @@ header>nav {
 }
 
 .navLinks {
-    display: none;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    width: 79%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 1px dimgrey;
+    transition: transform 500ms;
+    text-align: center;
+    z-index: 7;
+}
+
+.navLinks div {
+    width: 99%;
+    height: 2px;
+    background-color: rgb(241, 241, 241);
+}
+
+input[type=checkbox]:checked~header>nav>.navLinks {
+    transform: translateY(200px);
 }
 
 .navTitle>img {
@@ -57,6 +81,7 @@ header>nav {
 #burgerButton {
     font-size: 1.7rem;
     font-weight: 900;
+    color: darkgrey;
 }
 
 /* ========================== Main part ========================== */
@@ -78,7 +103,7 @@ main {
 
 .hero>div {
     margin: auto;
-    height:350px;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     width: 86%;
@@ -116,7 +141,7 @@ main {
 .button {
     display: block;
     margin-top: 30px;
-    text-decoration: none   ;
+    text-decoration: none;
     font-family: "Roboto";
     width: 115px;
     height: 45px;
@@ -153,7 +178,9 @@ main {
 
 .freeNFT {
     height: 315px;
-    background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000);
+    background-image: url("images/background.svg");
+    background-size: cover;
+    background-position: 90% 0%;
 }
 
 .freeNFT>:nth-child(1) {
@@ -189,11 +216,12 @@ main {
     gap: 20px;
 }
 
-.opendoor, .boomerang {
+.opendoor,
+.boomerang {
     display: none;
 }
 
-.partners img{
+.partners img {
     height: 45px;
 }
 
@@ -237,7 +265,7 @@ main {
     justify-content: space-between;
 }
 
-.cards>div{
+.cards>div {
     margin-right: 40px;
 }
 
@@ -340,7 +368,7 @@ main {
 
 .launchingSoon>div:nth-child(2) {
     margin: auto;
-    display:block;
+    display: block;
     justify-content: space-between;
     overflow-y: hidden;
     width: 86%;
@@ -364,13 +392,13 @@ main {
     letter-spacing: 1px;
 }
 
-.goLive{
+.goLive {
     display: none;
 }
 
 .launchingSoon>div:nth-child(1),
 .launchingSoon>div:nth-child(3),
-.launchingSoon>div:nth-child(4){
+.launchingSoon>div:nth-child(4) {
     height: 2px;
     background-color: rgb(241, 241, 241);
 }
@@ -391,7 +419,7 @@ main {
     position: absolute;
     width: 250px;
     height: 460px;
-    bottom:1px;
+    bottom: 1px;
     left: 235px;
     z-index: -1;
     background-image: url("images/greenDoll.png");
@@ -403,15 +431,15 @@ main {
 
 /* ========================= Links part ========================= */
 
-.links>div{
-    margin:auto;
+.links>div {
+    margin: auto;
     width: 86%;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-.linksLogo{
+.linksLogo {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -419,31 +447,31 @@ main {
     margin-bottom: 55px;
 }
 
-.linksLogo>div:nth-child(1){
+.linksLogo>div:nth-child(1) {
     height: 35px;
     margin-bottom: 27px;
 }
 
-.linksLogo>div:nth-child(2){
+.linksLogo>div:nth-child(2) {
     font-size: 1.3rem;
     margin-bottom: 27px;
 }
 
-.linksLogo>div:nth-child(3){
+.linksLogo>div:nth-child(3) {
     font-size: 1.1rem;
 }
 
-.linksLogo>div:nth-child(3)>a{
+.linksLogo>div:nth-child(3)>a {
     color: rgb(100, 100, 100);
     margin-right: 10px;
 }
 
-.linksLinks{
-    list-style-type: none; 
-    padding: 0; 
+.linksLinks {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
     display: grid;
-    justify-items: start; 
+    justify-items: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 70px;
@@ -453,9 +481,9 @@ main {
     width: 50%;
 }
 
-.linksLinks ul{
-    list-style-type: none; 
-    padding: 0; 
+.linksLinks ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -463,11 +491,11 @@ main {
     width: 100px;
 }
 
-.linksLinks ul>li{
+.linksLinks ul>li {
     align-self: end;
 }
 
-.linksLinks ul>li:nth-child(1){
+.linksLinks ul>li:nth-child(1) {
     align-self: start;
     font-weight: 800;
     font-size: 1rem;
@@ -475,7 +503,7 @@ main {
     margin-bottom: 16px;
 }
 
-.linksLinks a{
+.linksLinks a {
     text-decoration: none;
     color: rgb(100, 100, 100);
 }
@@ -486,7 +514,7 @@ footer>div {
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
-    margin:17px auto 70px auto;
+    margin: 17px auto 70px auto;
     width: 90%;
     color: rgb(147, 147, 147);
 }
@@ -495,27 +523,27 @@ footer>div {
     display: none;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
 
     body {
         width: 1440px;
     }
-    
+
     /* ========================= Header part ========================= */
-    
+
     header {
         margin-top: 60px;
     }
-    
+
     header>nav {
         width: 90%;
     }
-    
+
     .navLinks {
         display: initial;
     }
 
-    #burgerButton{
+    #burgerButton {
         display: none;
     }
 
@@ -523,85 +551,107 @@ footer>div {
         height: 35px;
     }
 
+    .navLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        position: static;
+        top: 77px;
+        width: 100%;
+        height: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 0px 0px white;
+        transition: none;
+        text-align: initial;
+        z-index: 7;
+    }
+
+    input[type=checkbox]:checked~header>nav>.navLinks {
+        transform: translateY(0px);
+    }
+    .navLinks div {
+        display: none;
+    }
+
     /* ========================== Main part ========================== */
-    
+
     main {
         overflow-x: auto;
     }
-    
+
     /* ========================== Hero part ========================= */
-    
+
     .hero {
         margin-top: 120px;
     }
-    
+
     .hero>div {
         height: 650px;
         width: 90%;
     }
-    
+
     .topText {
         letter-spacing: 3px;
         margin-top: 80px;
         margin-bottom: 30px;
     }
-    
+
     .midText {
         max-width: 610px;
         font-size: 6rem;
         letter-spacing: 0px;
         margin-bottom: 30px;
     }
-    
+
     .bottomText {
         max-width: 500px;
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.3;
     }
-    
+
     .button {
         margin-top: 50px;
         height: 45px;
         line-height: 45px;
         border: solid 4px transparent;
     }
-     
+
     .heroImg {
-        top:-30px;
-        left:46%;
+        top: -30px;
+        left: 46%;
         width: 750px;
         height: 750px;
     }
-    
+
     /* ======================= Free NFT part ========================= */
-    
+
     .freeNFT {
         height: 320px;
         width: 90%;
         margin: auto;
         border-radius: 12px;
     }
-    
+
     .freeNFT>:nth-child(1) {
         font-weight: 600;
         margin: 155px 0px 0px 45px;
         max-width: 100%;
     }
-    
+
     .freeNFT>:nth-child(2) {
         font-size: 1.4rem;
         margin-left: 45px;
         max-width: 100%;
     }
-    
+
     .partners {
         margin-top: 125px;
         width: 90%;
     }
-    
+
     /* ========================= Partners part ========================= */
-    
+
     .partners {
         max-width: 90%;
         margin: 125px auto 0px auto;
@@ -613,29 +663,30 @@ footer>div {
         justify-content: space-between;
     }
 
-    .opendoor, .boomerang {
-        display:initial;
+    .opendoor,
+    .boomerang {
+        display: initial;
     }
 
     .boom {
-        display:none;
+        display: none;
     }
-    
+
     /* ========================= Auction part ========================= */
-    
+
     .auction {
         margin-top: 110px;
     }
-    
+
     .auctionText {
         width: 90%;
     }
-    
+
     .auctionText>div:nth-child(1) {
         font-size: 2.5rem;
         max-width: 100%;
     }
-    
+
     .auctionText>div:nth-child(2) {
         margin-top: 25px;
         margin-bottom: 60px;
@@ -646,31 +697,31 @@ footer>div {
     .cards {
         width: 90%;
     }
-    
-    .cards>div{
+
+    .cards>div {
         margin-right: 0px;
     }
 
     .cardTop {
         width: 300px;
     }
-    
+
     .cardBottom {
         width: 300px;
         border-radius: 0 0 18px 18px;
     }
-    
+
     .dataGrid {
         width: 260px;
     }
-      
+
     /* ====================== launching part ========================= */
-    
+
     .launchingSoon {
         width: 90%;
-        margin:120px auto 120px auto;
+        margin: 120px auto 120px auto;
     }
-    
+
     .launchingSoon>div:nth-child(2) {
         width: 100%;
     }
@@ -678,7 +729,7 @@ footer>div {
     .launchingSoon>div>div>.topText {
         margin-top: 120px;
     }
-    
+
     .launchingSoon>div>div>.midText {
         margin-top: 0px;
         letter-spacing: -1px;
@@ -688,16 +739,16 @@ footer>div {
     .launchingSoon>div>div>.bottomText {
         max-width: 575px;
     }
-    
-    .goLive{
+
+    .goLive {
         display: initial;
     }
-    
+
     .launchingSoon>div:nth-child(3) {
         margin-top: 120px;
 
     }
-    
+
     .launchingSoon>div:nth-child(4) {
         display: none;
     }
@@ -707,34 +758,34 @@ footer>div {
         width: 300px;
         height: 475px;
     }
-    
+
     /* ========================= Links part ========================= */
-    
-    .links>div{
+
+    .links>div {
         width: 90%;
         flex-direction: row;
         justify-content: space-between;
         height: 140px;
     }
-    
-    .linksLogo{
+
+    .linksLogo {
         justify-content: space-between;
     }
-    
-    .linksLinks{
+
+    .linksLinks {
         justify-items: start;
         grid-template-columns: repeat(4, 1fr);
         width: 48%;
         column-gap: 35px;
     }
-    
+
     /* ========================= Footer part ========================= */
-    
+
     footer>div {
-        margin:115px auto 70px auto;
+        margin: 115px auto 70px auto;
         width: 90%;
     }
-    
+
     .date {
         display: initial;
     }
