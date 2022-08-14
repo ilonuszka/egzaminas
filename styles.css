@@ -105,7 +105,7 @@ main {
 .midText {
     max-width: 350px;/*MOD*/
     overflow-x: visible;
-    top: 35px;
+    /* top: 35px; */
     font-family: "Archivo Black";
     font-size: 3rem;/*MOD*/
     font-weight: 1000;/*MOD*/
@@ -129,12 +129,12 @@ main {
     text-decoration: none   ;
     font-family: "Roboto";
     width: 115px;/*MOD*/
-    height: 40px;/*MOD*/
+    height: 45px;/*MOD*/
     border-radius: 100rem;
     font-size: 1.2rem;/*MOD*/
     text-align: center;
     font-weight: 800;
-    line-height: 40px;/*MOD*/
+    line-height: 45px;/*MOD*/
     padding: .7rem 2rem;
     color: black;
     border: solid 5px transparent;/*MOD*/
@@ -352,7 +352,6 @@ main {
     margin-top: 83px;/*MOD*/
     margin-bottom: 55px;
     position: relative;/*MOD*/
-    /* height: 630px;MOD */
 }
 
 .launchingSoon>div:nth-child(2) {
@@ -522,135 +521,148 @@ footer>div {
 @media screen and (min-width: 768px) { 
 
     body {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-content: center; */
         width: 1440px;
-        margin: 0 auto;
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        background-color: white;
+        /* margin: 0 auto; */
+        /* color: black; */
+        /* font-family: 'Roboto', sans-serif; */
+        /* background-color: white; */
     }
     
     /* ========================= Header part ========================= */
     
     header {
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
         margin-top: 60px;
     }
     
     header>nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* margin-top: 10px; */
         width: 90%;
     }
     
     .navTitle {
-        display: flex;
-        align-content: center;
+        /* display: flex; */
+        /* align-content: center; */
     }
     
+    .navLinks {
+        display: block;
+    }
+
+    #burgerButton{
+        display: none;
+    }
     .navTitle>img {
         height: 35px;
     }
     
     .navLinks>* {
-        font-size: 1.4rem;
-        margin-right: 10px;
+        /* font-size: 1.4rem; */
+        /* margin-right: 10px; */
     }
     
     .navLinks>.linkSignUp {
-        color: #ff0080;
+        /* color: #ff0080; */
     }
     
     .navLinks>a {
-        text-decoration: none;
-        color: black;
+        /* text-decoration: none; */
+        /* color: black; */
     }
     
     /* ========================== Main part ========================== */
     
     main {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-content: center; */
+        overflow-x: auto;
     }
     
     /* ========================== Hero part ========================= */
     
     .hero {
         margin-top: 120px;
-        margin-bottom: 115px;
+        /* margin-bottom: 115px; */
     }
     
     .hero>div {
-        margin: auto;
+        /* margin: auto; */
         height: 650px;
-        display: flex;
-        justify-content: space-between;
+        /* display: flex; */
+        /* justify-content: space-between; */
         width: 90%;
     }
     
     .topText {
-        color: rgb(251, 38, 173);
-        font-size: 1rem;
+        /* color: rgb(251, 38, 173); */
+        /* font-size: 1rem; */
         letter-spacing: 3px;
-        font-weight: 1000;
+        /* font-weight: 1000; */
         margin-top: 80px;
         margin-bottom: 30px;
     }
     
     .midText {
         max-width: 610px;
-        top: 35px;
-        font-family: "Archivo Black";
+        /* top: 35px; */
+        /* font-family: "Archivo Black"; */
         font-size: 6rem;
-        font-weight: 1000;
-        line-height: 1.2;
+        /* font-weight: 1000; */
+        /* line-height: 1.2; */
+        letter-spacing: 0px;
         margin-bottom: 30px;
-        padding: 0;
+        /* padding: 0; */
     }
     
     .bottomText {
         max-width: 500px;
-        color: rgb(113, 113, 113);
+        /* color: rgb(113, 113, 113); */
         font-size: 1.3rem;
         font-weight: 400;
+        line-height: 1.3;
     }
     
     .button {
-        display: block;
+        /* display: block; */
         margin-top: 50px;
-        text-decoration: none   ;
-        font-family: "Roboto";
-        width: 115px;
+        /* text-decoration: none   ; */
+        /* font-family: "Roboto"; */
+        /* width: 115px; */
         height: 45px;
-        border-radius: 100rem;
-        font-size: 1.2rem;
-        text-align: center;
-        font-weight: 800;
+        /* border-radius: 100rem; */
+        /* font-size: 1.2rem; */
+        /* text-align: center; */
+        /* font-weight: 800; */
         line-height: 45px;
-        padding: .7rem 2rem;
-        color: black;
+        /* padding: .7rem 2rem; */
+        /* color: black; */
         border: solid 4px transparent;
-        background-image: linear-gradient(220deg, #d19d18, #ff489a);
-        background-origin: border-box;
-        box-shadow: 2px 1000px 1px #fff inset;
+        /* background-image: linear-gradient(220deg, #d19d18, #ff489a); */
+        /* background-origin: border-box; */
+        /* box-shadow: 2px 1000px 1px #fff inset; */
     }
     
     .button:hover {
-        box-shadow: none;
-        color: white;
+        /* box-shadow: none; */
+        /* color: white; */
     }
     
     .heroImg {
-        width: 660px;
-        height: 650px;
-        background-image: url("images/BFTBot.png");
-        background-size: cover;
+        /* position: absolute; */
+        top:-30px;
+        left:46%;
+        width: 750px;
+        height: 750px;
+        /* background-image: url("images/BFTBot.svg"); */
+        /* background-size: cover; */
     }
     
     /* ======================= Free NFT part ========================= */
@@ -660,31 +672,48 @@ footer>div {
         width: 90%;
         margin: auto;
         border-radius: 12px;
-        background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000);
+        /* background: linear-gradient(220deg, #40e0d0, #ff8c00, #ff0080, #ff0000); */
     }
     
     .freeNFT>:nth-child(1) {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
         font-weight: 600;
         margin: 155px 0px 0px 45px;
+        max-width: 100%;
     }
     
     .freeNFT>:nth-child(2) {
         font-size: 1.4rem;
         margin-left: 45px;
+        max-width: 100%;
     }
     
     .partners {
         margin-top: 125px;
+        width: 90%;
     }
     
     /* ========================= Partners part ========================= */
     
+    .partners {
+        /* margin-top: 125px; */
+        max-width: 90%;
+        margin: 125px auto 0px auto;
+    }
+
     .partners>div {
-        width: 90%;
-        margin: auto;
+        width: 100%;
+        /* margin: auto; */
         display: flex;
         justify-content: space-between;
+    }
+
+    .opendoor, .boomerang {
+        display:initial;
+    }
+
+    .boom {
+        display:none;
     }
     
     /* ========================= Auction part ========================= */
@@ -695,12 +724,13 @@ footer>div {
     
     .auctionText {
         width: 90%;
-        margin: auto;
+        /* margin: auto; */
     }
     
     .auctionText>div:nth-child(1) {
         font-size: 2.5rem;
-        font-weight: 600;
+        max-width: 100%;
+        /* font-weight: 600; */
     
     }
     
@@ -708,240 +738,274 @@ footer>div {
         margin-top: 25px;
         margin-bottom: 60px;
         font-size: 1.3rem;
-        font-weight: 400;
+        max-width: 100%;
+        /* font-weight: 400; */
     }
     
     .auctionText>div:nth-child(2)>a {
-        color: black;
+        /* color: black; */
     }
     
     .cards {
         width: 90%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
+        /* margin: auto; */
+        /* display: flex; */
+        /* justify-content: space-between; */
     }
     
+    .cards>div{
+        margin-right: 0px;
+    }
+
     .cardTop {
-        background-size: cover;
+        /* background-size: cover; */
         width: 300px;
-        height: 280px;
-        border-radius: 18px 18px 0 0;
+        /* height: 280px; */
+        /* border-radius: 18px 18px 0 0; */
     }
     
     .purpleManImg {
-        background-image: url("images/purpleMan.png");
+        /* background-image: url("images/purpleMan.png"); */
     }
     
     .beigeImg {
-        background-image: url("images/beige.png");
+        /* background-image: url("images/beige.png"); */
     }
     
     .redManImg {
-        background-image: url("images/redMan.png");
+        /* background-image: url("images/redMan.png"); */
     }
     
     .greenImg {
-        background-image: url("images/green.png");
+        /* background-image: url("images/green.png"); */
     }
     
     .cardBottom {
-        background-color: rgb(230, 230, 230);
-        height: 120px;
+        /* background-color: rgb(230, 230, 230); */
+        /* height: 120px; */
         width: 300px;
         border-radius: 0 0 18px 18px;
-        position: relative;
+        /* position: relative; */
     }
     
     .dataGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.8fr 1fr 1fr;
-        height: 83px;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: 0.8fr 1fr 1fr; */
+        /* height: 83px; */
         width: 260px;
-        position: absolute;
-        margin: 17px 0 0 20px;
+        /* position: absolute; */
+        /* margin: 17px 0 0 20px; */
     }
     
     .cardSeries {
-        color: rgb(228, 121, 0);
-        place-self: center start;
-        font-size: 0.8rem;
+        /* color: rgb(228, 121, 0); */
+        /* place-self: center start; */
+        /* font-size: 0.8rem; */
     }
     
     .cardTopBid {
-        place-self: center end;
-        color: rgb(130, 130, 130);
-        font-size: 0.8rem;
+        /* place-self: center end; */
+        /* color: rgb(130, 130, 130); */
+        /* font-size: 0.8rem; */
     }
     
     .cardClient {
-        place-self: center start;
+        /* place-self: center start;
         color: black;
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 600; */
     }
     
     .cardETH {
-        place-self: center end;
+        /* place-self: center end;
         color: black;
         font-size: 1.2rem;
         font-weight: 600;
         display: flex;
-        align-content: center;
+        align-content: center; */
     }
     
     .cardClientID {
-        place-self: center start;
+        /* place-self: center start;
         color: rgb(130, 130, 130);
-        font-size: 1.2rem;
+        font-size: 1.2rem; */
     }
     
     .cardTime {
-        place-self: center end;
+        /* place-self: center end;
         color: rgb(130, 130, 130);
-        font-size: 1.2rem;
+        font-size: 1.2rem; */
     }
     
     .cardETHIcon {
-        background-image: url("images/eth.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 22px;
-        width: 20px;
+        /* background-image: url("images/eth.png"); */
+        /* background-size: contain; */
+        /* background-repeat: no-repeat; */
+        /* height: 22px; */
+        /* width: 20px; */
     }
     
     /* ====================== launching part ========================= */
     
     .launchingSoon {
-        margin-top: 120px;
-        margin-bottom: 120px;
+        /* margin-top: 120px;
+        margin-bottom: 120px; */
+        width: 90%;
+        margin:120px auto 120px auto;
     }
     
     .launchingSoon>div {
-        margin: auto;
+        /* margin: auto; */
         /* height: 650px; */
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* width: 90%; */
     }
     
+    .launchingSoon>div:nth-child(2) {
+        width: 100%;
+    }
+
     .launchingSoon>div>div>.topText {
         margin-top: 120px;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
     }
     
     .launchingSoon>div>div>.midText {
         margin-top: 0px;
-        font-size: 3.6rem;
+        letter-spacing: -1px;
+        /* font-size: 3.6rem; */
         max-width: 800px;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
+    }
+
+    .launchingSoon>div>div>.bottomText {
+        max-width: 575px;/*MOD*/
+        /* letter-spacing: 1px;MOD */
+        /* width: 100%; */
     }
     
+    .goLive{
+        display: initial;
+    }
+
     .launchingSoon>div:nth-child(1),
     .launchingSoon>div:nth-child(3) {
-        height: 2px;
-        background-color: rgb(241, 241, 241);
+        /* height: 2px; */
+        /* background-color: rgb(241, 241, 241); */
     }
     
-    /* .launchingSoon>div:nth-child(3) {
+    .launchingSoon>div:nth-child(3) {
         margin-top: 120px;
-    } */
+
+    }
     
+    .launchingSoon>div:nth-child(4) {
+        display: none;
+    }
+
     .launchingSoonImg {
+        left: 950px;
         width: 300px;
-        height: 480px;
-        background-image: url("images/greenDoll.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-right: 140px;
-        margin-top: 80px;
+        height: 475px;
+        /* background-image: url("images/greenDoll.png"); */
+        /* background-size: contain; */
+        /* background-repeat: no-repeat; */
+        /* margin-right: 140px;v */
+        /* margin-top: 80px; */
     }
     
     /* ========================= Links part ========================= */
     
     .links>div{
-        margin:auto;
+        /* margin:auto; */
         width: 90%;
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         justify-content: space-between;
         height: 140px;
     }
     
     .linksLogo{
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
+        /* flex-direction: column; */
         justify-content: space-between;
-        color: rgb(117, 117, 117);
+        /* color: rgb(117, 117, 117); */
     }
     
     .linksLogo>div:nth-child(1){
-        height: 35px;
+        /* height: 35px; */
     }
     
     .linksLogo>div:nth-child(2){
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
     }
     
     .linksLogo>div:nth-child(3){
-        font-size: 1.1rem;
+        /* font-size: 1.1rem; */
     }
     
     .linksLogo>div:nth-child(3)>a{
-        color: rgb(117, 117, 117);
-        margin-right: 10px;
+        /* color: rgb(117, 117, 117); */
+        /* margin-right: 10px; */
     }
     
     .linksLinks{
-        list-style-type: none; 
-        padding: 0; 
-        margin: 0;
-        display: grid;
-        justify-items: end;
+        /* list-style-type: none;  */
+        /* padding: 0;  */
+        /* margin: 0; */
+        /* display: grid; */
+        justify-items: start;
         grid-template-columns: repeat(4, 1fr);
-        color: rgb(117, 117, 117);
-        font-size: 1.3rem;
-        width: 50%;
+        /* color: rgb(117, 117, 117); */
+        /* font-size: 1.3rem; */
+        width: 48%;
+        column-gap: 35px;/*MOD*/
+        /* margin-right: 27px; */
     }
     
     .linksLinks ul{
-        list-style-type: none; 
-        padding: 0; 
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        width: 100px;
+        /* list-style-type: none;  */
+        /* padding: 0;  */
+        /* margin: 0; */
+        /* display: grid; */
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        /* width: 90px; */
     }
     
     .linksLinks ul>li{
-        align-self: end;
+        /* align-self: end; */
     }
     
     .linksLinks ul>li:nth-child(1){
-        align-self: start;
-        font-weight: 800;
-        font-size: 1rem;
-        letter-spacing: 3px;
+        /* align-self: start; */
+        /* font-weight: 800; */
+        /* font-size: 1rem; */
+        /* letter-spacing: 3px; */
     }
     
     .linksLinks a{
-        text-decoration: none;
-        color: rgb(117, 117, 117);
+        /* text-decoration: none; */
+        /* color: rgb(117, 117, 117); */
     }
     
     /* ========================= Footer part ========================= */
     
     footer>div {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.3rem;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* font-size: 1.3rem; */
         margin:115px auto 70px auto;
         width: 90%;
-        color: rgb(117, 117, 117);
+        /* color: rgb(117, 117, 117); */
     }
     
+    .date {
+        display: initial;
+    }
+
     section {
         height: fit-content;
     
